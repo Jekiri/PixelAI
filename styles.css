@@ -1,0 +1,176 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'PixeloidSans', Arial, sans-serif;
+    background-image: url('Images/app-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@font-face {
+    font-family: 'PixeloidSans';
+    src: url('Style/PixeloidSans-mLxMm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-image: url('Images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.app-info {
+    margin-bottom: 20px;
+}
+
+.app-description {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.app-images {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.app-images img {
+    max-width: 100%;
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.download {
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    background: url('Images/custom-button.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.download-button:hover {
+    background-image: url('Images/custom-button_hover.png');
+    background-size: cover;
+}
+
+footer {
+    background-image: url('Images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.coming-soon-message {
+    font-size: 20px;
+    color: #FF5733;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .app-info {
+        text-align: center;
+    }
+
+    .app-description {
+        text-align: left;
+        padding-top: 10px;
+    }
+
+    .app-description ul {
+        text-align: center;
+    }
+
+    .app-description li {
+        text-align: left;
+        margin-left: 10px;
+        list-style-type: disc;
+    }
+
+    .app-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-images img {
+        width: 80%;
+        max-width: none;
+        height: auto;
+        max-height: 90%;
+        margin: 10px 0;
+    }
+
+    .download-button {
+        margin-top: 10px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .coming-soon-message {
+        font-size: 16px;
+    }
+}
